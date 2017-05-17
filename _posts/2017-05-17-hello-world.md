@@ -6,7 +6,8 @@ tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
 
-[TOC]
+[toc]
+
 # h1
 ## h2
 ### h3
