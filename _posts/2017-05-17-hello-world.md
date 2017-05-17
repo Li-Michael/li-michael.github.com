@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tagline: "Supporting tagline"
+tagline: "bioinfo"
 tags : [bioinfo] 
 ---
 {% include JB/setup %}
