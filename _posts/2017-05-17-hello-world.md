@@ -7,7 +7,8 @@ tags : [bioinfo]
 {% include JB/setup %}
 
 [intro, beginner, jekyll, tutorial]
-[toc]
+
+[TOC]
 
 # h1
 ## h2
