@@ -2,10 +2,11 @@
 layout: post
 category : lessons
 tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+tags : [bioinfo] 
 ---
 {% include JB/setup %}
 
+[intro, beginner, jekyll, tutorial]
 [toc]
 
 # h1
