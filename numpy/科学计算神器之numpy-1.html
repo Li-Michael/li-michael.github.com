@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- saved from url=(0126)http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>科学计算神器之numpy</title><script src="./科学计算神器之numpy-1_files/require.min.js"></script>
-<script src="./科学计算神器之numpy-1_files/jquery.min.js"></script>
+<html>
+<head><meta charset="utf-8" />
+<title>科学计算神器之numpy</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
     /*!
@@ -11745,13 +11745,13 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="./科学计算神器之numpy-1_files/custom.css">
+<link rel="stylesheet" href="custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="./科学计算神器之numpy-1_files/MathJax.js" id=""></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config;executed=true">
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -11768,103 +11768,8 @@ div#notebook {
         }
     });
     </script>
-    <!-- End of mathjax configuration --><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
-.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
-.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
-.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
-</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 1px 2em; background: transparent}
-.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
-.MathJax_MenuActive .MathJax_MenuArrow {color: white}
-.MathJax_MenuArrow.RTL {left: .5em; right: auto}
-.MathJax_MenuCheck {position: absolute; left: .7em}
-.MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: .7em}
-.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
-.MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: #606872; color: white}
-.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
-.MathJax_ContextMenu:focus {outline: none}
-.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
-#MathJax_AboutClose {top: .2em; right: .2em}
-.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
-.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
-.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
-.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_MenuClose:hover span {background-color: #CCC!important}
-.MathJax_MenuClose:hover:focus {outline: none}
-</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
-</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
-.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
-</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
-#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-</style><style type="text/css">.MathJax_Preview {color: #888}
-#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
-#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
-.MathJax_Error {color: #CC0000; font-style: italic}
-</style><style type="text/css">.MJXp-script {font-size: .8em}
-.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
-.MJXp-bold {font-weight: bold}
-.MJXp-italic {font-style: italic}
-.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-largeop {font-size: 150%}
-.MJXp-largeop.MJXp-int {vertical-align: -.2em}
-.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
-.MJXp-display {display: block; text-align: center; margin: 1em 0}
-.MJXp-math span {display: inline-block}
-.MJXp-box {display: block!important; text-align: center}
-.MJXp-box:after {content: " "}
-.MJXp-rule {display: block!important; margin-top: .1em}
-.MJXp-char {display: block!important}
-.MJXp-mo {margin: 0 .15em}
-.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
-.MJXp-denom {display: inline-table!important; width: 100%}
-.MJXp-denom > * {display: table-row!important}
-.MJXp-surd {vertical-align: top}
-.MJXp-surd > * {display: block!important}
-.MJXp-script-box > *  {display: table!important; height: 50%}
-.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
-.MJXp-script-box > *:last-child > * {vertical-align: bottom}
-.MJXp-script-box > * > * > * {display: block!important}
-.MJXp-mphantom {visibility: hidden}
-.MJXp-munderover {display: inline-table!important}
-.MJXp-over {display: inline-block!important; text-align: center}
-.MJXp-over > * {display: block!important}
-.MJXp-munderover > * {display: table-row!important}
-.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
-.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
-.MJXp-mtr {display: table-row!important}
-.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
-.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-mlabeledtr {display: table-row!important}
-.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
-.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
-.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
-.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
-.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
-.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
-.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
-.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
-.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
-.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
-.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
-</style></head>
-<body><div id="MathJax_Message" style="display: none;"></div>
+    <!-- End of mathjax configuration --></head>
+<body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -11873,8 +11778,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="科学计算神器之numpy-1">科学计算神器之numpy-1<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#科学计算神器之numpy-1">¶</a></h1><blockquote><p>这个系列主要集中在python做科学计算的Numpy、Scipy等库，当然原汁原味的知识才是最好的，请查看<a href="https://docs.scipy.org/">https://docs.scipy.org/</a>
-Numpy系列包含ndarray、ufunc、矩阵运算和文件存取</p>
+<h1 id="&#31185;&#23398;&#35745;&#31639;&#31070;&#22120;&#20043;numpy-1">&#31185;&#23398;&#35745;&#31639;&#31070;&#22120;&#20043;numpy-1<a class="anchor-link" href="#&#31185;&#23398;&#35745;&#31639;&#31070;&#22120;&#20043;numpy-1">&#182;</a></h1><blockquote><ul>
+<li>这个系列主要集中在python做科学计算的Numpy、Scipy等库，当然原汁原味的知识才是最好的，请查看<a href="https://docs.scipy.org/">https://docs.scipy.org/</a></li>
+<li>Numpy系列包含ndarray、ufunc、矩阵运算和文件存取</li>
+</ul>
 </blockquote>
 
 </div>
@@ -11886,7 +11793,7 @@ Numpy系列包含ndarray、ufunc、矩阵运算和文件存取</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Numpy主要包含两种数据结构：Array和Matrix，以及对应的的Ufunc函数</p>
-<h2 id="1.-安装numpy">1. 安装numpy<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#1.-安装numpy">¶</a></h2>
+<h2 id="1.-&#23433;&#35013;numpy">1. &#23433;&#35013;numpy<a class="anchor-link" href="#1.-&#23433;&#35013;numpy">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11907,7 +11814,7 @@ sudo pip install numpy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-导入numpy">2. 导入numpy<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#2.-导入numpy">¶</a></h2>
+<h2 id="2.-&#23548;&#20837;numpy">2. &#23548;&#20837;numpy<a class="anchor-link" href="#2.-&#23548;&#20837;numpy">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11929,8 +11836,8 @@ sudo pip install numpy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-创建对象">3. 创建对象<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.-创建对象">¶</a></h2><p>Numpy最主要的对象是均匀的多维数组，我们可以通过给array函数传递Python的序列对象创建数组，如果传递的是多层嵌套的序列，将创建多维数组。Numpy的array类叫做ndarray，也就是通常说的array，numpy.array与python的array.array是不同的，它仅提供一维数组和少量函数。</p>
-<h4 id="3.1-ndarray最常用的属性">3.1 ndarray最常用的属性<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.1-ndarray最常用的属性">¶</a></h4><ul>
+<h2 id="3.-&#21019;&#24314;&#23545;&#35937;">3. &#21019;&#24314;&#23545;&#35937;<a class="anchor-link" href="#3.-&#21019;&#24314;&#23545;&#35937;">&#182;</a></h2><p>Numpy最主要的对象是均匀的多维数组，我们可以通过给array函数传递Python的序列对象创建数组，如果传递的是多层嵌套的序列，将创建多维数组。Numpy的array类叫做ndarray，也就是通常说的array，numpy.array与python的array.array是不同的，它仅提供一维数组和少量函数。</p>
+<h4 id="3.1-ndarray&#26368;&#24120;&#29992;&#30340;&#23646;&#24615;">3.1 ndarray&#26368;&#24120;&#29992;&#30340;&#23646;&#24615;<a class="anchor-link" href="#3.1-ndarray&#26368;&#24120;&#29992;&#30340;&#23646;&#24615;">&#182;</a></h4><ul>
 <li>ndarray.ndim  
 <pre><code>  —array的维数，及数组维数，python中被称为秩rank</code></pre>
 </li>
@@ -12014,7 +11921,7 @@ sudo pip install numpy
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(2, (2, 3), 6, dtype('int64'), 8)</pre>
+<pre>(2, (2, 3), 6, dtype(&#39;int64&#39;), 8)</pre>
 </div>
 
 </div>
@@ -12093,7 +12000,7 @@ sudo pip install numpy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="3.2-创建array对象—根据python序列对象和数据类型创建">3.2 创建array对象—根据python序列对象和数据类型创建<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.2-创建array对象—根据python序列对象和数据类型创建">¶</a></h4>
+<h4 id="3.2-&#21019;&#24314;array&#23545;&#35937;&#8212;&#26681;&#25454;python&#24207;&#21015;&#23545;&#35937;&#21644;&#25968;&#25454;&#31867;&#22411;&#21019;&#24314;">3.2 &#21019;&#24314;array&#23545;&#35937;&#8212;&#26681;&#25454;python&#24207;&#21015;&#23545;&#35937;&#21644;&#25968;&#25454;&#31867;&#22411;&#21019;&#24314;<a class="anchor-link" href="#3.2-&#21019;&#24314;array&#23545;&#35937;&#8212;&#26681;&#25454;python&#24207;&#21015;&#23545;&#35937;&#21644;&#25968;&#25454;&#31867;&#22411;&#21019;&#24314;">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -12266,8 +12173,8 @@ sudo pip install numpy
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 自定义数据类型 字节顺序：&gt;为big-edian &lt;为little-endian， i4:int32,及4个字节</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)],</span><span class="n">dtype</span><span class="o">=</span><span class="p">[(</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'&lt;i4'</span><span class="p">),(</span><span class="s1">'b'</span><span class="p">,</span><span class="s1">'&lt;i8'</span><span class="p">)])</span>
-<span class="n">x</span><span class="p">[</span><span class="s1">'a'</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)],</span><span class="n">dtype</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;&lt;i4&#39;</span><span class="p">),(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;&lt;i8&#39;</span><span class="p">)])</span>
+<span class="n">x</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12299,7 +12206,7 @@ sudo pip install numpy
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Numpy默认类型为int64</span>
-<span class="n">x</span><span class="p">[</span><span class="s1">'b'</span><span class="p">]</span>
+<span class="n">x</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12330,7 +12237,7 @@ sudo pip install numpy
 <div class="prompt input_prompt">In&nbsp;[119]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="s1">'b'</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
 </pre></div>
 
 </div>
@@ -12347,7 +12254,7 @@ sudo pip install numpy
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>dtype('int64')</pre>
+<pre>dtype(&#39;int64&#39;)</pre>
 </div>
 
 </div>
@@ -12361,7 +12268,7 @@ sudo pip install numpy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="3.3-创建matrix对象-/-matrix转为array对象">3.3 创建matrix对象 / matrix转为array对象<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.3-创建matrix对象-/-matrix转为array对象">¶</a></h4>
+<h4 id="3.3-&#21019;&#24314;matrix&#23545;&#35937;-/-matrix&#36716;&#20026;array&#23545;&#35937;">3.3 &#21019;&#24314;matrix&#23545;&#35937; / matrix&#36716;&#20026;array&#23545;&#35937;<a class="anchor-link" href="#3.3-&#21019;&#24314;matrix&#23545;&#35937;-/-matrix&#36716;&#20026;array&#23545;&#35937;">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -12404,7 +12311,7 @@ sudo pip install numpy
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># ！可以用数值字符串创建matrix， 并将其转为array对象</span>
-<span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">'1 2; 3 4'</span><span class="p">))</span>
+<span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">&#39;1 2; 3 4&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12437,7 +12344,7 @@ sudo pip install numpy
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 用数值字符串创建array,整体仍为字符类型的一个元素</span>
-<span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="s1">'1 2;3 4'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">))</span>
+<span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="s1">&#39;1 2;3 4&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12454,8 +12361,8 @@ sudo pip install numpy
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array(['1 2;3 4', 'a'],
-      dtype='|S7')</pre>
+<pre>array([&#39;1 2;3 4&#39;, &#39;a&#39;],
+      dtype=&#39;|S7&#39;)</pre>
 </div>
 
 </div>
@@ -12470,7 +12377,7 @@ sudo pip install numpy
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 仍为matrix对象</span>
-<span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">'1 2; 3 4'</span><span class="p">),</span> <span class="n">subok</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s1">&#39;1 2; 3 4&#39;</span><span class="p">),</span> <span class="n">subok</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12502,8 +12409,8 @@ sudo pip install numpy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="3.4-利用函数创建array对象">3.4 利用函数创建array对象<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.4-利用函数创建array对象">¶</a></h4><p>Numpy专门提供了很多函数来创建数组，常用的有arange、linspace、logspace、zeros、ones、empty等函数通过数值创建数组(类同matlab)，以及frombuffer, fromstring, fromfile等函数可以从字节序列创建数组，还可以通过fromfunction来通过函数创建数组.</p>
-<h5 id="3.4.1-通过arange、linspace、logspace等函数创建数组">3.4.1 通过arange、linspace、logspace等函数创建数组<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.4.1-通过arange、linspace、logspace等函数创建数组">¶</a></h5><p>arange与linspace最主要的区别是，arange第三个参数为step，linspace/logspace第三个参数为元素个数</p>
+<h4 id="3.4-&#21033;&#29992;&#20989;&#25968;&#21019;&#24314;array&#23545;&#35937;">3.4 &#21033;&#29992;&#20989;&#25968;&#21019;&#24314;array&#23545;&#35937;<a class="anchor-link" href="#3.4-&#21033;&#29992;&#20989;&#25968;&#21019;&#24314;array&#23545;&#35937;">&#182;</a></h4><p>Numpy专门提供了很多函数来创建数组，常用的有arange、linspace、logspace、zeros、ones、empty等函数通过数值创建数组(类同matlab)，以及frombuffer, fromstring, fromfile等函数可以从字节序列创建数组，还可以通过fromfunction来通过函数创建数组.</p>
+<h5 id="3.4.1-&#36890;&#36807;arange&#12289;linspace&#12289;logspace&#31561;&#20989;&#25968;&#21019;&#24314;&#25968;&#32452;">3.4.1 &#36890;&#36807;arange&#12289;linspace&#12289;logspace&#31561;&#20989;&#25968;&#21019;&#24314;&#25968;&#32452;<a class="anchor-link" href="#3.4.1-&#36890;&#36807;arange&#12289;linspace&#12289;logspace&#31561;&#20989;&#25968;&#21019;&#24314;&#25968;&#32452;">&#182;</a></h5><p>arange与linspace最主要的区别是，arange第三个参数为step，linspace/logspace第三个参数为元素个数</p>
 <ul>
 <li>arange函数类似于python的range函数，通过指定开始值、终值和步长来创建一维数组，注意数组不包括终值:</li>
 </ul>
@@ -12745,7 +12652,7 @@ sudo pip install numpy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="3.4.2-通过frombuffer,-fromstring,-fromfile等函数从字节序列创建array，以fromstring为例">3.4.2 通过frombuffer, fromstring, fromfile等函数从字节序列创建array，以fromstring为例<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.4.2-通过frombuffer,-fromstring,-fromfile等函数从字节序列创建array，以fromstring为例">¶</a></h5>
+<h5 id="3.4.2-&#36890;&#36807;frombuffer,-fromstring,-fromfile&#31561;&#20989;&#25968;&#20174;&#23383;&#33410;&#24207;&#21015;&#21019;&#24314;array&#65292;&#20197;fromstring&#20026;&#20363;">3.4.2 &#36890;&#36807;frombuffer, fromstring, fromfile&#31561;&#20989;&#25968;&#20174;&#23383;&#33410;&#24207;&#21015;&#21019;&#24314;array&#65292;&#20197;fromstring&#20026;&#20363;<a class="anchor-link" href="#3.4.2-&#36890;&#36807;frombuffer,-fromstring,-fromfile&#31561;&#20989;&#25968;&#20174;&#23383;&#33410;&#24207;&#21015;&#21019;&#24314;array&#65292;&#20197;fromstring&#20026;&#20363;">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -12757,7 +12664,7 @@ sudo pip install numpy
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Python的字符串实际上是字节序列，每个字符占一个字节，</span>
 <span class="c1"># 因此如果从字符串s创建一个8bit的整数数组的话，所得到的数组正好就是字符串中每个字符的ASCII编码</span>
 <span class="c1"># 通过fromstring就可以从一个数据文件或者二进制文件中读取数据来创建array</span>
-<span class="n">s</span> <span class="o">=</span> <span class="s1">'abcdefgh'</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;abcdefgh&#39;</span>
 <span class="n">np</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">),</span>  <span class="n">np</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
 </pre></div>
 
@@ -12791,7 +12698,7 @@ sudo pip install numpy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="3.4.3-通过fromfunction创建array">3.4.3 通过fromfunction创建array<a class="anchor-link" href="http://localhost:8888/nbconvert/html/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%A5%9E%E5%99%A8%E4%B9%8Bnumpy.ipynb?download=false#3.4.3-通过fromfunction创建array">¶</a></h5>
+<h5 id="3.4.3-&#36890;&#36807;fromfunction&#21019;&#24314;array">3.4.3 &#36890;&#36807;fromfunction&#21019;&#24314;array<a class="anchor-link" href="#3.4.3-&#36890;&#36807;fromfunction&#21019;&#24314;array">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -12845,16 +12752,17 @@ sudo pip install numpy
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Numpy弥补了Python自身的array的大量不足，为Python提供了数值计算的基础库，衍生出了大量做大数据分析的库，这奠定了Python做大数据分析的地位，也是在机器学习、深度学习逐渐进入应用领域中最常用的语言，赶快搂起袖子加油干！</p>
 <p>Enjoy it～</p>
+<hr>
+<p><img src="attachment:%E7%94%9F%E4%BF%A1%E6%94%BE%E6%98%A0%E5%AE%A4.png" alt="%E7%94%9F%E4%BF%A1%E6%94%BE%E6%98%A0%E5%AE%A4.png"></p>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-
+</body>
 
  
 
 
-
-</body></html>
+</html>
