@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Python科学计算神器之Numpy-4</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Python_Numpy-4</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11904,9 +11904,10 @@ div#notebook {
 <p>这里我们看到了另一种描述结构类型的方法: 一个包含多个组元的列表,其中如 (字段名, 类型描述) 的组元来描述结构数组中的每个字段. 类型描述前面的"|","&lt;","&gt;"描述了字段值的字节顺序:</p>
 <ul>
 <li>|: 忽视字节顺序</li>
-<li>&lt;: 低位字节在前, 即大段序</li>
-<li>&gt;: 高位字节在前, 即小端序</li>
+<li>&lt;: 低位字节在前, 即最低有效位存储在最低内存地址处—小端序</li>
+<li>&gt;: 高位字节在前, 即最高有效位存储在最低内存地址处—大端序</li>
 </ul>
+<p><img src="Big-Endian.png" alt="image.png"> <img src="Little-Endian.png" alt="image.png"></p>
 <h3 id="2.1-&#22235;&#31181;&#23450;&#20041;&#26041;&#27861;">2.1 &#22235;&#31181;&#23450;&#20041;&#26041;&#27861;<a class="anchor-link" href="#2.1-&#22235;&#31181;&#23450;&#20041;&#26041;&#27861;">&#182;</a></h3><p>结构数组有四种定义方式，即表述dtype对象结构的参数方式：</p>
 <ul>
 <li>1) string</li>
@@ -12509,7 +12510,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>虽然上面罗嗦了这么多, 然而并没什么卵用, 对这类数据, 我们当然是交给将Numpy封装的更好的<strong>Pandas</strong>来处理了^_^</p>
 <hr>
-<p><img src="./%E7%94%9F%E4%BF%A1%E6%94%BE%E6%98%A0%E5%AE%A4_3.jpg" alt="%E7%94%9F%E4%BF%A1%E6%94%BE%E6%98%A0%E5%AE%A4_3.jpg"></p>
+<p><img src="生信放映室_3.jpg" alt="11_3.jpg"></p>
 
 </div>
 </div>
